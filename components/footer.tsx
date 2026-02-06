@@ -53,7 +53,7 @@ export function Footer() {
 
           {/* CTA */}
           <div className="flex flex-col justify-end">
-            <Link href="https://calendly.com/artifaiofficial/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white font-medium text-sm hover:bg-black/80 transition-fast group">
+            <Link href="https://calendly.com/artifai/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white font-medium text-sm hover:bg-black/80 transition-fast group">
               Book a Call
               <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-fast" />
             </Link>

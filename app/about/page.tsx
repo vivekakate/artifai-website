@@ -284,7 +284,7 @@ export default function AboutPage() {
           <p className="text-center text-sm text-gray-400" >
                 We'll respond within 24 hours.{' '}
                 <Link
-                  href="https://calendly.com/artifaiofficial/30min"
+                  href="https://calendly.com/artifai/30min"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline hover:text-black transition-colors "
