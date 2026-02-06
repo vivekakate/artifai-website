@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Mail, Linkedin, Twitter, ArrowUpRight } from 'lucide-react'
+import { Mail, Linkedin, Twitter, ArrowUpRight, Instagram } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -30,8 +30,8 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-gray-600">
               <li><Link href="/about" className="hover:text-black transition-fast underline-accent">About</Link></li>
               <li><Link href="/contact" className="hover:text-black transition-fast underline-accent">Contact</Link></li>
-              <li><a href="#" className="hover:text-black transition-fast underline-accent">Blog</a></li>
-              <li><a href="#" className="hover:text-black transition-fast underline-accent">Privacy</a></li>
+              {/* <li><a href="#" className="hover:text-black transition-fast underline-accent">Blog</a></li>
+              <li><a href="#" className="hover:text-black transition-fast underline-accent">Privacy</a></li> */}
             </ul>
           </div>
 
@@ -44,6 +44,9 @@ export function Footer() {
               </a>
               <a href="https://www.linkedin.com/company/artifai" className="text-gray-600 hover:text-black transition-fast" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={18} />
+              </a>
+              <a href="https://www.instagram.com/artifai.in?igsh=MWZlNnR5cnpjbmZpZQ==" className="text-gray-600 hover:text-black transition-fast" title="Instagram" target="_blank" rel="noopener noreferrer">
+                <Instagram size={18} />
               </a>
             </div>
           </div>
