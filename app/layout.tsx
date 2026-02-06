@@ -3,7 +3,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ArtifAI - Premium AI Agency',
+  title: 'ArtifAI Agency',
   description: 'We combine traditional tech services with AI power. AI with purpose. Automation with impact. Tech that actually helps business.',
   keywords: ['AI', 'Automation', 'Web Development', 'AI Services', 'Tech Agency'],
   generator: 'v0.app',

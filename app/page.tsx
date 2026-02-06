@@ -56,10 +56,10 @@ export default function Home() {
             <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl leading-tight text-black" style={{ opacity: 1 - scrollPos * 0.001 }}>
               We make AI work for your business.
             </h1>
-            <p className="text-3xl md:text-3xl text-gray-700 max-w-3xl leading-relaxed font-light">
+            <p className="text-2xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed font-light">
               Not tomorrow. Today. We build intelligent systems, automate workflows, and create digital products that actually make your team more productive.
             </p>
-            <p className="text-2xl text-gray-600 max-w-2xl">
+            <p className="text-xl text-gray-600 max-w-2xl">
               Whether it's AI that understands your customers, automation that eliminates busywork, or web apps that your users love — we've done it before and we'll do it right.
             </p>
           </div>
@@ -93,12 +93,12 @@ export default function Home() {
               >
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-lg font-medium text-black group-hover:text-black/70 transition-smooth">{item.label}</h3>
-                    <p className="text-sm text-gray-600 mt-2">{item.desc}</p>
+                    <h3 className="text-xl font-medium text-black group-hover:text-black/70 transition-smooth">{item.label}</h3>
+                    <p className="text-base text-gray-600 mt-2">{item.desc}</p>
                   </div>
                   <div className="space-y-1 pt-2 border-t border-black/5">
                     {item.highlights.map((h, i) => (
-                      <div key={i} className="text-xs text-gray-500 flex items-start gap-2">
+                      <div key={i} className="text-sm text-gray-500 flex items-start gap-2">
                         <span className="text-gray-400 mt-0.5">•</span>
                         <span>{h}</span>
                       </div>
