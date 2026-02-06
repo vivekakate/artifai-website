@@ -21,7 +21,6 @@ export function Footer() {
               <li><Link href="/ai-services" className="hover:text-black transition-fast underline-accent">AI Services</Link></li>
               <li><Link href="/web-app" className="hover:text-black transition-fast underline-accent">Web & App</Link></li>
               <li><Link href="/automation" className="hover:text-black transition-fast underline-accent">Automation</Link></li>
-              <li><Link href="/all-services" className="hover:text-black transition-fast underline-accent">All</Link></li>
             </ul>
           </div>
 
@@ -40,22 +39,19 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-xs font-bold text-black uppercase tracking-widest">Connect</h4>
             <div className="flex gap-4">
-              <a href="mailto:hello@artifai.in" className="text-gray-600 hover:text-black transition-fast" title="Email" target="_blank" rel="noopener noreferrer">
+              <a href="mailto:artifaiofficial@gmail.com" className="text-gray-600 hover:text-black transition-fast" title="Email" target="_blank" rel="noopener noreferrer">
                 <Mail size={18} />
               </a>
-              <a href="#" className="text-gray-600 hover:text-black transition-fast" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/company/artifai" className="text-gray-600 hover:text-black transition-fast" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={18} />
-              </a>
-              <a href="#" className="text-gray-600 hover:text-black transition-fast" title="Twitter" target="_blank" rel="noopener noreferrer">
-                <Twitter size={18} />
               </a>
             </div>
           </div>
 
           {/* CTA */}
           <div className="flex flex-col justify-end">
-            <Link href="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white font-medium text-sm hover:bg-black/80 transition-fast group">
-              Start Project
+            <Link href="https://calendly.com/artifaiofficial/30min" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-black text-white font-medium text-sm hover:bg-black/80 transition-fast group">
+              Book a Call
               <ArrowUpRight size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-fast" />
             </Link>
           </div>
@@ -63,7 +59,7 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-black/8 pt-8 text-center text-xs text-gray-500 space-y-2">
-          <p>&copy; 2025 ArtifAI. All rights reserved.</p>
+          <p>&copy; 2026 ArtifAI. All rights reserved.</p>
           <p>Crafted for creative teams who think differently.</p>
         </div>
       </div>

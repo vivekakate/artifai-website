@@ -105,7 +105,7 @@ export function ContactForm() {
             </button>
 
             <p className="text-center text-sm text-gray-400">
-              We'll respond within 24 hours. <Link href="/contact" className="underline hover:text-white transition-colors">Or schedule a call</Link>.
+              We'll respond within 24 hours. <Link href="https://calendly.com/artifaiofficial/30min" target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">Or schedule a call</Link>.
             </p>
           </form>
         )}

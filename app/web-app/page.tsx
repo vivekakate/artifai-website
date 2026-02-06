@@ -160,7 +160,9 @@ export default function WebAppPage() {
                     <span className="inline-flex items-center gap-2 text-foreground font-medium group-hover:gap-3 transition-all">
                       Learn more <ArrowRight size={20} />
                     </span>
+                    
                   </div>
+                  <hr />
                 </div>
               </Link>
             ))}

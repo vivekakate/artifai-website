@@ -57,14 +57,14 @@ export default function Home() {
               We make AI work for your business.
             </h1>
             <p className="text-2xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed font-light">
-              Not tomorrow. Today. We build intelligent systems, automate workflows, and create digital products that actually make your team more productive.
+              Not tomorrow. Today. We build intelligent systems, automate workflows, and create digital products that actually make your business more effective.
             </p>
-            <p className="text-xl text-gray-600 max-w-2xl">
-              Whether it's AI that understands your customers, automation that eliminates busywork, or web apps that your users love — we've done it before and we'll do it right.
+            <p className="text-xl text-gray-500 max-w-2xl">
+            AI that understands customers. Automation that kills busywork. Web apps people enjoy using — built right the first time.
             </p>
           </div>
 
-          {/* Services Grid - 3 Main Categories */}
+          {/* Services Grid - 3 Main Categories
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
             {[
               { 
@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
               </Link>
             ))}
-          </div>
+          </div> */}
 
           {/* CTA */}
           <div className="pt-4">
@@ -377,6 +377,18 @@ export default function Home() {
             Start a Conversation
             <ArrowRight size={20} />
           </Link>
+          <p className="text-center text-sm text-gray-400" >
+                We'll respond within 24 hours.{' '}
+                <Link
+                  href="https://calendly.com/artifaiofficial/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-black transition-colors "
+                >
+                  Or schedule a call
+                </Link>
+                .
+              </p>
         </div>
       </section>
 

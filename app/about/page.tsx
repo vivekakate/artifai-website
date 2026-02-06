@@ -170,7 +170,7 @@ export default function AboutPage() {
               },
             ].map((item, idx) => (
               <div key={idx} className="p-8 bg-white border border-black/8 rounded-lg">
-                <div className="text-5xl font-bold text-black mb-2">{item.metric}</div>
+                <div className="text-5xl font-serif text-black mb-2">{item.metric}</div>
                 <p className="text-lg text-gray-700">{item.desc}</p>
               </div>
             ))}
@@ -254,7 +254,7 @@ export default function AboutPage() {
               },
             ].map((item, idx) => (
               <div key={idx} className="space-y-4 pb-8 border-b border-white/10 relative last:border-0">
-                <div className="text-7xl font-serif text-white/10 absolute -top-4 -left-4">
+                <div className="text-7xl font-serif text-white/15 absolute -top-4 -left-4">
                   {String(idx + 1).padStart(2, '0')}
                 </div>
                 <h3 className="font-serif text-3xl text-white relative z-10">{item.title}</h3>
@@ -281,6 +281,18 @@ export default function AboutPage() {
             Start a Conversation
             <ArrowRight size={20} />
           </Link>
+          <p className="text-center text-sm text-gray-400" >
+                We'll respond within 24 hours.{' '}
+                <Link
+                  href="https://calendly.com/artifaiofficial/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-black transition-colors "
+                >
+                  Or schedule a call
+                </Link>
+                .
+              </p>
         </div>
       </section>
 

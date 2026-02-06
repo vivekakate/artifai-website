@@ -5,6 +5,7 @@ import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { Mail, Phone, Linkedin, Twitter, MessageCircle } from 'lucide-react'
 import { FormEvent, useState } from 'react'
+import Link from 'next/link'
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -47,7 +48,7 @@ export default function ContactPage() {
       </section>
 
       {/* Main Contact Section */}
-      <section className="py-20 px-6 lg:px-8">
+      <section className="py-10 px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           {submitted ? (
             <div className="text-center py-16 space-y-4">
@@ -114,9 +115,23 @@ export default function ContactPage() {
               >
                 Send
               </button>
+              <p className="text-center text-sm text-gray-400" >
+                We'll respond within 24 hours.{' '}
+                <Link
+                  href="https://calendly.com/artifaiofficial/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-black transition-colors "
+                >
+                  Or schedule a call
+                </Link>
+                .
+              </p>
             </form>
+            
           )}
         </div>
+        
       </section>
 
       <section className="py-32 px-6 lg:px-8 bg-black text-white">
@@ -126,15 +141,15 @@ export default function ContactPage() {
           <div className="space-y-8">
             <div className="pb-8 border-b border-white/10">
               <h3 className="font-medium mb-2">Email</h3>
-              <a href="mailto:hello@example.com" className="text-gray-400 hover:text-white transition-fast">
-                hello@example.com
+              <a href="mailto:artifaiofficial@gmail.com" className="text-gray-400 hover:text-white transition-fast">
+                artifaiofficial@gmail.com
               </a>
             </div>
 
             <div className="pb-8 border-b border-white/10">
               <h3 className="font-medium mb-2">Phone</h3>
-              <a href="tel:+1234567890" className="text-gray-400 hover:text-white transition-fast">
-                +1 (234) 567-890
+              <a href="tel:+9307414112" className="text-gray-400 hover:text-white transition-fast">
+                +91 9307414112
               </a>
             </div>
 

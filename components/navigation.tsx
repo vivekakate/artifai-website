@@ -11,7 +11,8 @@ export function Navigation() {
 
   const links = [
     { href: '/', label: 'Home' },
-    { href: '/ai-services', label: 'AI & Automation' },
+    { href: '/ai-services', label: 'AI Services' },
+    { href: '/automation', label: 'AI Automation' },
     { href: '/web-app', label: 'Web & Apps' },
     { href: '/about', label: 'About' },
     { href: '/contact', label: 'Contact' },
@@ -24,7 +25,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
         <Link href="/" className="hover:opacity-70 transition-fast">
-  <img src="/logo.png" alt="ArtifAI" className="h-10 w-auto" />
+  <img src="/logo1.png" alt="ArtifAI" className="h-9 w-auto" />
 </Link>
 
           {/* Desktop Menu */}
