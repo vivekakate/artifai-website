@@ -56,10 +56,10 @@ export default function Home() {
             <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl leading-tight text-black" style={{ opacity: 1 - scrollPos * 0.001 }}>
               We make AI work for your business.
             </h1>
-            <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed font-light">
+            <p className="text-3xl md:text-3xl text-gray-700 max-w-3xl leading-relaxed font-light">
               Not tomorrow. Today. We build intelligent systems, automate workflows, and create digital products that actually make your team more productive.
             </p>
-            <p className="text-gray-600 max-w-2xl">
+            <p className="text-2xl text-gray-600 max-w-2xl">
               Whether it's AI that understands your customers, automation that eliminates busywork, or web apps that your users love — we've done it before and we'll do it right.
             </p>
           </div>

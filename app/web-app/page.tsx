@@ -68,10 +68,10 @@ export default function WebAppPage() {
           <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl leading-tight text-black">
             Web apps & websites that convert.
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed font-light">
+          <p className="text-2xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed font-light">
             We build digital products that are fast, beautiful, and designed to rank on Google. Your site won't be slow. Your app won't be clunky. Your SEO won't suck.
           </p>
-          <p className="text-gray-600 max-w-2xl">
+          <p className="text-xl text-gray-600 max-w-2xl">
             From landing pages optimized for Google to complex web applications, we combine design, performance, and SEO into products that make money.
           </p>
         </div>
@@ -124,7 +124,7 @@ export default function WebAppPage() {
           <div className="space-y-12">
             {services.map((service, idx) => (
               <Link key={idx} href="/contact" className="group block">
-                <div className="space-y-6 pb-12 border-b border-black/8 last:border-0 hover:bg-black/1 px-4 -mx-4 transition-all">
+                <div className="space-y-6 pb-12 border-b-2 border-gray-400 last:border-0 hover:bg-gray-100 px-4 -mx-4 transition-all">
                   <div className="space-y-2">
                     <span className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Service {idx + 1}</span>
                     <h3 className="font-serif text-4xl md:text-5xl text-foreground group-hover:text-gray-700 transition-colors">

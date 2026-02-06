@@ -101,10 +101,10 @@ export default function AIServices() {
           <h1 className="font-serif text-7xl md:text-8xl lg:text-9xl leading-tight text-foreground">
             AI that drives real results.
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed font-light">
+          <p className="text-2xl md:text-2xl text-gray-700 max-w-3xl leading-relaxed font-light">
             Custom AI agents, ChatGPT ranking optimization, lead automation. We build intelligent systems that work 24/7 and move your business forward.
           </p>
-          <p className="text-gray-600 max-w-2xl">
+          <p className="text-xl text-gray-600 max-w-2xl">
             Google's dying. ChatGPT and Claude are where people get answers now. We get you ranking in AI assistants and build AI that automates your business.
           </p>
         </div>
