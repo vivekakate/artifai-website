@@ -16,15 +16,38 @@ export default function ContactPage() {
   })
   const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e: FormEvent) => {
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    // In a real app, this would send to a backend
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setTimeout(() => {
+    setIsLoading(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send email')
+      }
+
+      setSubmitted(true)
       setFormData({ name: '', email: '', company: '', message: '' })
-      setSubmitted(false)
-    }, 3000)
+      setTimeout(() => {
+        setSubmitted(false)
+      }, 3000)
+    } catch (err) {
+      setError('Failed to send email. Please try again or contact us directly.')
+      console.error('Error submitting form:', err)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -58,6 +81,12 @@ export default function ContactPage() {
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-8">
+              {error && (
+                <div className="p-4 bg-red-50 border border-red-200 text-red-700 rounded">
+                  {error}
+                </div>
+              )}
+              
               <div>
                 <label className="block text-base md:text-lg text-black font-medium mb-3">Name</label>
                 <input
@@ -111,9 +140,10 @@ export default function ContactPage() {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-black text-white font-medium text-base hover:bg-black/80 transition-fast"
+                disabled={isLoading}
+                className="w-full px-8 py-4 bg-black text-white font-medium text-base hover:bg-black/80 transition-fast disabled:bg-black/50 disabled:cursor-not-allowed"
               >
-                Send
+                {isLoading ? 'Sending...' : 'Send'}
               </button>
               <p className="text-center text-sm text-gray-400" >
                 We'll respond within 24 hours.{' '}

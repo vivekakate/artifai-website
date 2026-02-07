@@ -4,7 +4,6 @@ import React from "react"
 
 import { FormEvent, useState } from 'react'
 import Link from 'next/link'
-import { ArrowRight } from 'lucide-react'
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -14,15 +13,38 @@ export function ContactForm() {
     message: '',
   })
   const [submitted, setSubmitted] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault()
-    console.log('Form submitted:', formData)
-    setSubmitted(true)
-    setTimeout(() => {
+    setIsLoading(true)
+    setError('')
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error('Failed to send email')
+      }
+
+      setSubmitted(true)
       setFormData({ name: '', email: '', company: '', message: '' })
-      setSubmitted(false)
-    }, 3000)
+      setTimeout(() => {
+        setSubmitted(false)
+      }, 3000)
+    } catch (err) {
+      setError('Failed to send email. Please try again or contact us directly.')
+      console.error('Error submitting form:', err)
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -46,6 +68,12 @@ export function ContactForm() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-8">
+            {error && (
+              <div className="p-4 bg-red-500/10 border border-red-500/30 text-red-400 rounded">
+                {error}
+              </div>
+            )}
+            
             <div>
               <label className="block text-base md:text-lg text-white font-medium mb-3">Name</label>
               <input
@@ -99,9 +127,10 @@ export function ContactForm() {
 
             <button
               type="submit"
-              className="w-full px-8 py-4 bg-white text-black font-medium text-base hover:bg-gray-100 transition-all"
+              disabled={isLoading}
+              className="w-full px-8 py-4 bg-white text-black font-medium text-base hover:bg-gray-100 transition-all disabled:bg-gray-400 disabled:cursor-not-allowed"
             >
-              Send Message
+              {isLoading ? 'Sending...' : 'Send Message'}
             </button>
 
             <p className="text-center text-sm text-gray-400">
