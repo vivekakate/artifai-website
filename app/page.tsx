@@ -125,12 +125,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Auto-Scrolling Companies */}
+      {/* Used by leading companies - commented out
       <section className="py-24 px-6 lg:px-8 bg-secondary/20 border-y border-secondary/30">
         <div className="max-w-6xl mx-auto">
           <p className="text-center text-gray-600 text-sm font-medium mb-12 uppercase tracking-widest">Used by leading companies</p>
-          
-          {/* Horizontal Scroll Container */}
           <div className="relative overflow-hidden">
             <div className="flex gap-6 animate-scroll">
               {companies.map((company, idx) => (
@@ -147,6 +145,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Our Superpowers - 4 Services */}
       <section className="py-32 px-6 lg:px-8">
@@ -328,7 +327,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Real results. Real people. (Testimonials) - commented out
       <section className="py-32 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-5xl md:text-6xl leading-tight text-foreground mb-4">
@@ -337,7 +336,6 @@ export default function Home() {
           <p className="text-lg md:text-xl text-gray-600 mb-16 max-w-3xl leading-relaxed">
             Don't take our word for it. Here's what our clients have to say.
           </p>
-
           <div className="overflow-hidden">
             <div className="flex gap-6 animate-scroll-slow">
               {[...testimonials, ...testimonials].map((testimonial, idx) => (
@@ -360,6 +358,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Process Section */}
       <section className="py-32 px-6 lg:px-8">
