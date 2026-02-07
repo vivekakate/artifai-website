@@ -21,6 +21,7 @@ export function Footer() {
               <li><Link href="/ai-services" className="hover:text-black transition-fast underline-accent">AI Services</Link></li>
               <li><Link href="/web-app" className="hover:text-black transition-fast underline-accent">Web & App</Link></li>
               <li><Link href="/automation" className="hover:text-black transition-fast underline-accent">Automation</Link></li>
+              <li><Link href="/ai-video" className="hover:text-black transition-fast underline-accent">AI Video & Creatives</Link></li>
             </ul>
           </div>
 
