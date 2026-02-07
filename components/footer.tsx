@@ -31,8 +31,8 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-gray-600">
               <li><Link href="/about" className="hover:text-black transition-fast underline-accent">About</Link></li>
               <li><Link href="/contact" className="hover:text-black transition-fast underline-accent">Contact</Link></li>
-              {/* <li><a href="#" className="hover:text-black transition-fast underline-accent">Blog</a></li>
-              <li><a href="#" className="hover:text-black transition-fast underline-accent">Privacy</a></li> */}
+              <li><Link href="/privacy" className="hover:text-black transition-fast underline-accent">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="hover:text-black transition-fast underline-accent">Terms of Use</Link></li>
             </ul>
           </div>
 
@@ -62,8 +62,12 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-black/8 pt-8 text-center text-xs text-gray-500 space-y-2">
-          <p>&copy; 2026 ArtifAI. All rights reserved.</p>
+        <div className="border-t border-black/8 pt-8 text-center text-xs text-gray-500 space-y-3">
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+            <span>&copy; 2026 ArtifAI. All rights reserved.</span>
+            <Link href="/privacy" className="hover:text-black transition-fast underline-accent">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-black transition-fast underline-accent">Terms of Use</Link>
+          </div>
           <p>Crafted for creative teams who think differently.</p>
         </div>
       </div>

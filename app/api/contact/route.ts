@@ -51,12 +51,38 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: process.env.GMAIL_USER,
       to: email,
-      subject: 'We received your message',
+      subject: 'We received your request - Let’s build something great!',
       html: `
-        <h2>Hi ${name},</h2>
-        <p>Thank you for reaching out to ArtifAI. We've received your message and will get back to you within 24 hours.</p>
-        <p>In the meantime, feel free to schedule a call with us: <a href="https://calendly.com/artifai/30min">calendly.com/artifai/30min</a></p>
-        <p>Best regards,<br>ArtifAI Team</p>
+        <!-- SUBJECT: We received your request — Let’s build something great 🚀 -->
+
+<h2>Hi ${name},</h2>
+
+<p>
+Thank you for contacting <strong>ArtifAI</strong> - we’ve received your message and it’s now in our queue.
+</p>
+
+<p>
+Our team will review your request and get back to you within <strong>24 hours</strong> with next steps or clarifying questions if needed.
+</p>
+
+<p>
+If you’d like to move faster, you can book a quick discovery call with us here:<br>
+<a href="https://calendly.com/artifai/30min">
+Schedule your call
+</a>
+</p>
+
+<p>
+On the call, we’ll understand your goals, suggest the best approach, and outline practical next steps - no pressure, just clarity.
+</p>
+
+<p>
+Looking forward to speaking with you.<br><br>
+Best regards,<br>
+<strong>ArtifAI Team</strong><br>
+AI Services • Automation • Web Systems
+</p>
+
       `,
     })
 

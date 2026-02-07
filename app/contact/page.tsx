@@ -1,9 +1,9 @@
 'use client'
 
 import React from "react"
+import Script from 'next/script'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
-import { Mail, Phone, Linkedin, Twitter, MessageCircle } from 'lucide-react'
 import { FormEvent, useState } from 'react'
 import Link from 'next/link'
 
@@ -161,7 +161,23 @@ export default function ContactPage() {
             
           )}
         </div>
-        
+      </section>
+
+      {/* Calendly inline widget */}
+      <section className="py-16 px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-2">Book a call.</h2>
+          <p className="text-lg text-gray-600 mb-8">Pick a time that works for you - 30 min, no pressure.</p>
+          <div
+            className="calendly-inline-widget"
+            data-url="https://calendly.com/artifai/30min"
+            style={{ minWidth: '320px', height: '700px' }}
+          />
+          <Script
+            src="https://assets.calendly.com/assets/external/widget.js"
+            strategy="lazyOnload"
+          />
+        </div>
       </section>
 
       <section className="py-32 px-6 lg:px-8 bg-black text-white">
