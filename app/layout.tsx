@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   description: 'We combine traditional tech services with AI power. AI with purpose. Automation with impact. Tech that actually helps business.',
   keywords: ['AI', 'Automation', 'Web Development', 'AI Services', 'Tech Agency'],
   generator: 'v0.app',
+  icons: {
+    icon: '/logo.png',
+  },
   openGraph: {
     title: 'ArtifAI - The AI Agency',
     description: 'We combine traditional tech services with AI power.',
