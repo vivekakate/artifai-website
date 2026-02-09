@@ -10,7 +10,7 @@ export default function AIServices() {
   const services = [
     {
       title: 'Custom AI Agents',
-      desc: 'Purpose-built AI that understands your business logic and operates autonomously.',
+      desc: 'Purpose-built AI that understands your business logic and operates autonomously. Handles complex workflows, makes decisions, takes actions across your systems.',
       whatItDoes: 'Handles complex workflows, makes decisions, takes actions across your systems.',
       howWeHelp: 'We design custom agents trained on your processes, data, and business rules.',
       howWeDiffer: 'Most agencies sell you off-the-shelf solutions. We build AI that knows your business inside out.',
@@ -18,7 +18,7 @@ export default function AIServices() {
     },
     {
       title: 'ChatGPT Integration & AI Ranking',
-      desc: 'Rank in ChatGPT\'s suggestion engine and leverage AI search for organic discovery.',
+      desc: 'Rank in ChatGPT\'s suggestion engine and leverage AI search for organic discovery. Optimizes your content to appear in ChatGPT, Claude, and other AI assistants\' recommendations.',
       whatItDoes: 'Optimizes your content to appear in ChatGPT, Claude, and other AI assistants\' recommendations.',
       howWeHelp: 'We structure your content, build knowledge bases, and optimize for AI algorithms.',
       howWeDiffer: 'We get you ranking in AI-first search. Early movers get the biggest advantage.',
@@ -26,35 +26,44 @@ export default function AIServices() {
     },
     {
       title: 'Lead Response AI',
-      desc: 'Automatically qualify and respond to inbound leads at scale.',
+      desc: 'Automatically qualify and respond to inbound leads at scale. Reads form submissions, emails, messages. Qualifies them, responds intelligently.',
       whatItDoes: 'Reads form submissions, emails, messages. Qualifies them, responds intelligently.',
       howWeHelp: 'We train AI on your qualifying criteria and integrate it into your lead flow.',
       howWeDiffer: 'No more missed leads or delayed responses. AI handles it 24/7.',
       impact: '+90% lead response rate'
     },
+    // Commented out - not core services people want
+    // {
+    //   title: 'Document Intelligence',
+    //   desc: 'Extract, classify, and analyze documents in seconds.',
+    //   whatItDoes: 'Processes contracts, invoices, forms. Extracts data, identifies patterns, flags risks.',
+    //   howWeHelp: 'We build custom ML models trained on your document types.',
+    //   howWeDiffer: 'Handles your specific document formats, not generic templates.',
+    //   impact: '10x faster processing'
+    // },
+    // {
+    //   title: 'Smart Knowledge Base',
+    //   desc: 'Self-serve support that actually answers questions.',
+    //   whatItDoes: 'AI-powered search that understands intent and provides accurate answers instantly.',
+    //   howWeHelp: 'We structure your knowledge, train the AI, and optimize for accuracy.',
+    //   howWeDiffer: 'Your knowledge base won\'t be useless anymore—it actually helps people.',
+    //   impact: '-70% support tickets'
+    // },
+    // {
+    //   title: 'Predictive Analytics',
+    //   desc: 'Forecast trends, detect churn, predict customer behavior.',
+    //   whatItDoes: 'Analyzes historical data to predict future outcomes with statistical accuracy.',
+    //   howWeHelp: 'We build predictive models, integrate them with your data, and create dashboards.',
+    //   howWeDiffer: 'Actionable predictions, not just pretty charts.',
+    //   impact: '+45% forecast accuracy'
+    // },
     {
-      title: 'Document Intelligence',
-      desc: 'Extract, classify, and analyze documents in seconds.',
-      whatItDoes: 'Processes contracts, invoices, forms. Extracts data, identifies patterns, flags risks.',
-      howWeHelp: 'We build custom ML models trained on your document types.',
-      howWeDiffer: 'Handles your specific document formats, not generic templates.',
-      impact: '10x faster processing'
-    },
-    {
-      title: 'Smart Knowledge Base',
-      desc: 'Self-serve support that actually answers questions.',
-      whatItDoes: 'AI-powered search that understands intent and provides accurate answers instantly.',
-      howWeHelp: 'We structure your knowledge, train the AI, and optimize for accuracy.',
-      howWeDiffer: 'Your knowledge base won\'t be useless anymore—it actually helps people.',
-      impact: '-70% support tickets'
-    },
-    {
-      title: 'Predictive Analytics',
-      desc: 'Forecast trends, detect churn, predict customer behavior.',
-      whatItDoes: 'Analyzes historical data to predict future outcomes with statistical accuracy.',
-      howWeHelp: 'We build predictive models, integrate them with your data, and create dashboards.',
-      howWeDiffer: 'Actionable predictions, not just pretty charts.',
-      impact: '+45% forecast accuracy'
+      title: 'AI Voice Agent',
+      desc: 'Intelligent voice assistants that handle customer calls, support, and sales conversations naturally. Answers calls, understands context, handles complex queries, schedules appointments, and transfers to humans when needed—all with natural conversation flow.',
+      whatItDoes: 'Answers calls, understands context, handles complex queries, schedules appointments, and transfers to humans when needed—all with natural conversation flow.',
+      howWeHelp: 'We build custom voice agents trained on your products, services, and customer data. Integrate with your phone systems, CRM, and scheduling tools.',
+      howWeDiffer: 'Not a basic chatbot. Real voice AI that sounds human, understands intent, and actually solves problems. Your customers won\'t know they\'re talking to AI.',
+      impact: '24/7 customer support, +60% call handling capacity'
     },
   ]
 
@@ -110,7 +119,7 @@ export default function AIServices() {
         </div>
       </section>
 
-      {/* ChatGPT Ranking Section */}
+      {/* ChatGPT Ranking Section - commented out
       <section className="py-32 px-6 lg:px-8 bg-primary/5">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12">
@@ -121,7 +130,6 @@ export default function AIServices() {
               Search is changing. ChatGPT, Claude, Perplexity—these are the new discovery engines. We get you ranking in AI assistants and build knowledge bases optimized for AI search.
             </p>
           </div>
-
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-8">
               <h3 className="font-serif text-3xl text-foreground">How AI SEO Works</h3>
@@ -151,7 +159,6 @@ export default function AIServices() {
                 ))}
               </div>
             </div>
-
             <div className="space-y-8">
               <div className="bg-white p-8 border-2 border-primary/20 rounded-lg">
                 <h3 className="font-serif text-2xl text-foreground mb-6">The Opportunity</h3>
@@ -169,7 +176,6 @@ export default function AIServices() {
                   </div>
                 </div>
               </div>
-
               <div className="space-y-4">
                 <h4 className="font-semibold text-foreground">Expected Results</h4>
                 <ul className="space-y-2">
@@ -185,6 +191,7 @@ export default function AIServices() {
           </div>
         </div>
       </section>
+      */}
 
       {/* Why AI? */}
       <section className="py-20 px-6 lg:px-8">
@@ -237,7 +244,6 @@ export default function AIServices() {
                   <div className="space-y-6">
                     <div className="flex items-start justify-between">
                       <div>
-                        <div className="text-4xl mb-4">{service.icon}</div>
                         <h3 className="font-serif text-2xl md:text-3xl text-foreground mb-3">
                           {service.title}
                         </h3>
@@ -248,20 +254,24 @@ export default function AIServices() {
                     </div>
 
                     <div className="space-y-4 pt-4 border-t border-primary/20">
+                      {/* What It Does commented out - merged into description
                       <div>
                         <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">What It Does</p>
                         <p className="text-gray-700">{service.whatItDoes}</p>
                       </div>
+                      */}
 
                       <div>
                         <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">How We Help</p>
                         <p className="text-gray-700">{service.howWeHelp}</p>
                       </div>
 
+                      {/* How We're Different commented out
                       <div>
                         <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">How We're Different</p>
                         <p className="text-gray-700">{service.howWeDiffer}</p>
                       </div>
+                      */}
 
                       <div className="pt-2">
                         <p className="text-sm font-semibold text-primary uppercase tracking-wide mb-2">Business Impact</p>

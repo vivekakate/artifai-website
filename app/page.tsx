@@ -160,166 +160,174 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
-            {/* AI Services */}
+            {/* AI Services & Voice Agents */}
             <Link href="/ai-services" className="group">
-              <div className="space-y-8">
-                <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
-                  <div className="relative space-y-6">
-                    <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
-                      AI Services
-                    </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      Custom AI agents, ChatGPT ranking, and intelligent systems. We rank you on AI assistants and build AI that automates your business—lead response, document intelligence, and knowledge bases that actually work.
+              <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
+                <div className="space-y-6">
+                  <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
+                    AI Services & Voice Agents
+                  </h3>
+                  {/* Description commented out
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Custom AI agents, ChatGPT ranking, and intelligent systems. We rank you on AI assistants and build AI that automates your business—lead response automation and AI voice agents that handle customer calls naturally.
+                  </p>
+                  */}
+
+                  <div className="space-y-4 pt-4">
+                    <h4 className="font-serif text-2xl text-foreground">What We Do</h4>
+                    <ul className="space-y-3">
+                      {['Custom AI agents & ChatGPT integration', 'AI SEO for ChatGPT & AI search rankings', 'Lead response automation', 'AI voice agents for customer calls & support'].map((item, idx) => (
+                        <li key={idx} className="flex gap-3 items-start">
+                          <CheckCircle2 size={20} className="text-primary flex-shrink-0 mt-1" />
+                          <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* How We're Different commented out
+                  <div className="space-y-4">
+                    <h4 className="font-serif text-2xl text-foreground">How We're Different</h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      We don't just slap AI on everything. We analyze your bottlenecks, find where AI creates actual value, and build solutions that integrate seamlessly. Your ROI isn't theoretical—it's measured in hours saved and revenue gained.
                     </p>
                   </div>
-                </div>
+                  */}
 
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">What We Do</h4>
-                  <ul className="space-y-3">
-                    {['Custom AI agents & ChatGPT integration', 'AI SEO for ChatGPT & AI search rankings', 'Lead response & document intelligence', 'Smart knowledge bases & predictive analytics'].map((item, idx) => (
-                      <li key={idx} className="flex gap-3 items-start">
-                        <CheckCircle2 size={20} className="text-primary flex-shrink-0 mt-1" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">How We're Different</h4>
-                  <p className="text-gray-700 leading-relaxed">
-                    We don't just slap AI on everything. We analyze your bottlenecks, find where AI creates actual value, and build solutions that integrate seamlessly. Your ROI isn't theoretical—it's measured in hours saved and revenue gained.
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <span className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                    Learn more <ArrowRight size={18} />
-                  </span>
+                  <div className="pt-6 border-t border-black/8">
+                    <span className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                      Learn more <ArrowRight size={18} />
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>
 
-            {/* AI Automation */}
+            {/* AI Automation & Chatbot */}
             <Link href="/automation" className="group">
-              <div className="space-y-8">
-                <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
-                  <div className="relative space-y-6">
-                    <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
-                      AI Automation
-                    </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      Your tools. Your processes. Connected seamlessly. We automate lead management, data sync, email sequences, and reporting—so your team gets their time back and nothing falls through the cracks.
+              <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
+                <div className="space-y-6">
+                  <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
+                    AI Automation & Chatbot
+                  </h3>
+                  {/* Description commented out
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Your tools. Your processes. Connected seamlessly. We automate lead management, appointment booking, email sequences, and customer support—so your team gets their time back and nothing falls through the cracks.
+                  </p>
+                  */}
+
+                  <div className="space-y-4 pt-4">
+                    <h4 className="font-serif text-2xl text-foreground">What We Automate</h4>
+                    <ul className="space-y-3">
+                      {['Lead management & qualification', 'Appointment booking automation', 'Email & marketing sequences', 'Customer support ticket routing', 'Operations & admin workflows'].map((item, idx) => (
+                        <li key={idx} className="flex gap-3 items-start">
+                          <CheckCircle2 size={20} className="text-primary flex-shrink-0 mt-1" />
+                          <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Why It Matters commented out
+                  <div className="space-y-4">
+                    <h4 className="font-serif text-2xl text-foreground">Why It Matters</h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      Your team shouldn't spend 40% of their day on repetitive tasks. We build workflows that work 24/7—without complaining, asking for a raise, or taking vacation. Scale without chaos.
                     </p>
                   </div>
-                </div>
+                  */}
 
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">What We Automate</h4>
-                  <ul className="space-y-3">
-                    {['Lead management & qualification', 'Data sync across CRM & tools', 'Email & marketing sequences', 'Reporting & dashboards that update themselves', 'Customer support ticket routing'].map((item, idx) => (
-                      <li key={idx} className="flex gap-3 items-start">
-                        <CheckCircle2 size={20} className="text-primary flex-shrink-0 mt-1" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">Why It Matters</h4>
-                  <p className="text-gray-700 leading-relaxed">
-                    Your team shouldn't spend 40% of their day on repetitive tasks. We build workflows that work 24/7—without complaining, asking for a raise, or taking vacation. Scale without chaos.
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <span className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
-                    Explore automation <ArrowRight size={18} />
-                  </span>
+                  <div className="pt-6 border-t border-black/8">
+                    <span className="inline-flex items-center gap-2 text-primary font-medium group-hover:gap-3 transition-all">
+                      Explore automation <ArrowRight size={18} />
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>
 
-            {/* Web & Apps */}
+            {/* Website & Apps */}
             <Link href="/web-app" className="group">
-              <div className="space-y-8">
-                <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
-                  <div className="relative space-y-6">
-                    <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
-                      Web & Apps
-                    </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      Beautiful, blazing-fast web apps and websites built with modern tech. Optimized for SEO, performance, and conversion. Whether it's a landing page or complex application, we build digital products that users actually love.
+              <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
+                <div className="space-y-6">
+                  <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
+                    Website & Apps
+                  </h3>
+                  {/* Description commented out
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    Beautiful, blazing-fast web apps and websites built with modern tech. Optimized for SEO, performance, and conversion. Whether it's a landing page or complex application, we build digital products that users actually love.
+                  </p>
+                  */}
+
+                  <div className="space-y-4 pt-4">
+                    <h4 className="font-serif text-2xl text-foreground">What We Build</h4>
+                    <ul className="space-y-3">
+                      {['Next.js applications & React components', 'SEO-optimized websites & landing pages', 'Real-time data dashboards & analytics tools', 'Mobile-responsive progressive web apps', 'E-commerce platforms & custom CMS'].map((item, idx) => (
+                        <li key={idx} className="flex gap-3 items-start">
+                          <CheckCircle2 size={20} className="text-accent flex-shrink-0 mt-1" />
+                          <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Why Choose Us commented out
+                  <div className="space-y-4">
+                    <h4 className="font-serif text-2xl text-foreground">Why Choose Us</h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      We obsess over performance, accessibility, and user experience. Your site isn't just pretty—it converts, it ranks, and it scales. We use cutting-edge tools like Next.js, TypeScript, and Tailwind to build applications that are maintainable and future-proof.
                     </p>
                   </div>
-                </div>
+                  */}
 
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">What We Build</h4>
-                  <ul className="space-y-3">
-                    {['Next.js applications & React components', 'SEO-optimized websites & landing pages', 'Real-time data dashboards & analytics tools', 'Mobile-responsive progressive web apps', 'E-commerce platforms & custom CMS'].map((item, idx) => (
-                      <li key={idx} className="flex gap-3 items-start">
-                        <CheckCircle2 size={20} className="text-accent flex-shrink-0 mt-1" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">Why Choose Us</h4>
-                  <p className="text-gray-700 leading-relaxed">
-                    We obsess over performance, accessibility, and user experience. Your site isn't just pretty—it converts, it ranks, and it scales. We use cutting-edge tools like Next.js, TypeScript, and Tailwind to build applications that are maintainable and future-proof.
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <span className="inline-flex items-center gap-2 text-accent font-medium group-hover:gap-3 transition-all">
-                    Explore web <ArrowRight size={18} />
-                  </span>
+                  <div className="pt-6 border-t border-black/8">
+                    <span className="inline-flex items-center gap-2 text-accent font-medium group-hover:gap-3 transition-all">
+                      Explore web <ArrowRight size={18} />
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>
 
             {/* AI Video & Creatives */}
             <Link href="/ai-video" className="group">
-              <div className="space-y-8">
-                <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
-                  <div className="relative space-y-6">
-                    <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
-                      AI Video & Creatives
-                    </h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">
-                      No cameras. No studios. AI-powered video and visuals that your audience actually engages with—in hours, not weeks. From product promos and social reels to ad creatives and thumbnails that convert.
+              <div className="relative overflow-hidden rounded-lg bg-white p-12 border-2 border-black/8 hover:border-black/20 transition-all">
+                <div className="space-y-6">
+                  <h3 className="font-serif text-4xl md:text-5xl leading-tight text-foreground">
+                    AI Video & Creatives
+                  </h3>
+                  {/* Description commented out
+                  <p className="text-lg text-gray-600 leading-relaxed">
+                    No cameras. No studios. AI-powered video and visuals that your audience actually engages with—in hours, not weeks. From product promos and social reels to ad creatives and thumbnails that convert.
+                  </p>
+                  */}
+
+                  <div className="space-y-4 pt-4">
+                    <h4 className="font-serif text-2xl text-foreground">What We Create</h4>
+                    <ul className="space-y-3">
+                      {['AI video ads & social reels', 'Product promos & explainer videos', 'Ad creatives & thumbnails', 'AI voiceover & talking avatars', 'Script-to-video generation'].map((item, idx) => (
+                        <li key={idx} className="flex gap-3 items-start">
+                          <CheckCircle2 size={20} className="text-accent flex-shrink-0 mt-1" />
+                          <span className="text-gray-700">{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  {/* Why It Works commented out
+                  <div className="space-y-4">
+                    <h4 className="font-serif text-2xl text-foreground">Why It Works</h4>
+                    <p className="text-gray-700 leading-relaxed">
+                      What took weeks—shoot, edit, revise—now takes hours. No studio rentals. No crew. Test 10 versions instantly. We create content that converts. Faster. Cheaper. Better.
                     </p>
                   </div>
-                </div>
+                  */}
 
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">What We Create</h4>
-                  <ul className="space-y-3">
-                    {['AI video ads & social reels', 'Product promos & explainer videos', 'Ad creatives & thumbnails', 'AI voiceover & talking avatars', 'Script-to-video generation'].map((item, idx) => (
-                      <li key={idx} className="flex gap-3 items-start">
-                        <CheckCircle2 size={20} className="text-accent flex-shrink-0 mt-1" />
-                        <span className="text-gray-700">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="space-y-4">
-                  <h4 className="font-serif text-2xl text-foreground">Why It Works</h4>
-                  <p className="text-gray-700 leading-relaxed">
-                    What took weeks—shoot, edit, revise—now takes hours. No studio rentals. No crew. Test 10 versions instantly. We create content that converts. Faster. Cheaper. Better.
-                  </p>
-                </div>
-
-                <div className="pt-4">
-                  <span className="inline-flex items-center gap-2 text-accent font-medium group-hover:gap-3 transition-all">
-                    Explore video & creatives <ArrowRight size={18} />
-                  </span>
+                  <div className="pt-6 border-t border-black/8">
+                    <span className="inline-flex items-center gap-2 text-accent font-medium group-hover:gap-3 transition-all">
+                      Explore video & creatives <ArrowRight size={18} />
+                    </span>
+                  </div>
                 </div>
               </div>
             </Link>

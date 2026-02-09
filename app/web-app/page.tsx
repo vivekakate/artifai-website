@@ -10,7 +10,7 @@ export default function WebAppPage() {
   const services = [
     {
       title: 'Landing Pages & Marketing Sites',
-      desc: 'High-converting pages optimized for Google. Rank + convert + build your brand.',
+      desc: 'High-converting pages optimized for Google that capture leads and tell your story compellingly. Rank + convert + build your brand.',
       whatItDoes: 'SEO-optimized websites designed to rank on Google, capture leads, and tell your story compellingly.',
       howWeHelp: 'We combine technical SEO (structured data, performance, mobile optimization) with conversion design. Every page is built to rank and sell.',
       howWeDiffer: 'Most agencies choose: either good design or good SEO. We give you both. Plus <1s load times and A+ SEO scores.',
@@ -18,7 +18,7 @@ export default function WebAppPage() {
     },
     {
       title: 'Web Applications',
-      desc: 'Complex, real-time apps that are fast, intuitive, and scale infinitely.',
+      desc: 'Real-time apps with complex workflows and multi-user collaboration. Fast, intuitive, and built with React and Next.js to scale infinitely.',
       whatItDoes: 'Real-time data, complex workflows, multi-user collaboration. Built with React and Next.js for maximum performance.',
       howWeHelp: 'We architect for scale from day one. Clean code, proper testing, security built-in. Your app won\'t become a technical nightmare.',
       howWeDiffer: 'We build for maintenance, not just launch. Code that\'s actually readable. Systems that scale without rebuilding.',
@@ -26,7 +26,7 @@ export default function WebAppPage() {
     },
     {
       title: 'Data Dashboards & Analytics',
-      desc: 'Transform raw data into actionable intelligence. Real-time dashboards that tell stories.',
+      desc: 'Transform raw data into actionable intelligence with real-time dashboards, custom visualizations, and predictive analytics. Connect to any data source and tell stories with your data.',
       whatItDoes: 'Real-time dashboards, custom visualizations, predictive analytics. Connect to any data source.',
       howWeHelp: 'We connect your databases, APIs, and data warehouses. Build beautiful charts. Enable real decisions.',
       howWeDiffer: 'Your dashboard won\'t look like a spreadsheet. It will look like a $50k consulting tool. For a fraction of the cost.',
@@ -34,7 +34,7 @@ export default function WebAppPage() {
     },
     {
       title: 'SaaS Platforms',
-      desc: 'Multi-tenant systems that scale to millions. Built right from the start.',
+      desc: 'Multi-tenant systems with user authentication, subscription management, multi-workspace support, and API infrastructure. Built right from the start to scale to millions.',
       whatItDoes: 'User authentication, subscription management, multi-workspace support, API infrastructure.',
       howWeHelp: 'We handle the infrastructure complexity so you focus on product. Stripe integration, user permissions, scaling—we do it.',
       howWeDiffer: 'We don\'t use templates. Every SaaS is architected for your specific business logic and growth trajectory.',
@@ -42,7 +42,7 @@ export default function WebAppPage() {
     },
     {
       title: 'E-Commerce & Storefronts',
-      desc: 'Online stores designed to convert. Beautiful, high-performing digital storefronts.',
+      desc: 'Beautiful, high-performing digital storefronts with product catalogs, shopping carts, secure payments, and inventory management. Designed to convert.',
       whatItDoes: 'Product catalogs, shopping carts, secure payments, inventory management.',
       howWeHelp: 'We integrate Stripe, manage inventory, and build checkout flows that close sales.',
       howWeDiffer: 'Your store will convert like a premium e-commerce platform. Built for performance and user experience.',
@@ -50,7 +50,7 @@ export default function WebAppPage() {
     },
     {
       title: 'Internal Tools & Admin Systems',
-      desc: 'Your team\'s secret weapon. Beautiful, fast tools that actually get used.',
+      desc: 'Your team\'s secret weapon. Beautiful, fast tools with custom workflows, user management, automation engines, and real-time data sync that actually get used.',
       whatItDoes: 'Custom workflows, user management, automation engines, real-time data sync.',
       howWeHelp: 'We translate requirements into intuitive software. Your team doesn\'t need training—they use it immediately.',
       howWeDiffer: 'We design for the humans using it, not just the spec. Your team will actually look forward to using it.',
@@ -136,18 +136,22 @@ export default function WebAppPage() {
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
+                    {/* What It Is commented out - merged into description
                     <div className="space-y-2">
                       <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">What It Is</p>
                       <p className="text-base text-gray-700 leading-relaxed">{service.whatItDoes}</p>
                     </div>
+                    */}
                     <div className="space-y-2">
                       <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">How We Build It</p>
                       <p className="text-base text-gray-700 leading-relaxed">{service.howWeHelp}</p>
                     </div>
+                    {/* Why We're Different commented out
                     <div className="space-y-2">
                       <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Why We're Different</p>
                       <p className="text-base text-gray-700 leading-relaxed">{service.howWeDiffer}</p>
                     </div>
+                    */}
                     {service.impact && (
                       <div className="space-y-2 border-l-4 border-black/10 pl-4">
                         <p className="text-sm font-semibold text-gray-600 uppercase tracking-wide">Business Impact</p>

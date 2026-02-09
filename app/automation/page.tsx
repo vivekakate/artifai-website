@@ -77,17 +77,18 @@ export default function AutomationPage() {
                   'Real-time CRM updates'
                 ]
               },
-              { 
-                title: 'Data Synchronization', 
-                desc: 'Your tools talk to each other automatically.',
-                details: [
-                  'Real-time sync between CRM, email, and tools',
-                  'Duplicate prevention and deduplication',
-                  'Two-way data flows',
-                  'Historical data preservation',
-                  'Audit trails and error handling'
-                ]
-              },
+              // Commented out - not core services people want
+              // { 
+              //   title: 'Data Synchronization', 
+              //   desc: 'Your tools talk to each other automatically.',
+              //   details: [
+              //     'Real-time sync between CRM, email, and tools',
+              //     'Duplicate prevention and deduplication',
+              //     'Two-way data flows',
+              //     'Historical data preservation',
+              //     'Audit trails and error handling'
+              //   ]
+              // },
               { 
                 title: 'Email & Marketing', 
                 desc: 'Triggered campaigns that actually convert.',
@@ -110,17 +111,18 @@ export default function AutomationPage() {
                   'Knowledge base suggestions'
                 ]
               },
-              { 
-                title: 'Reporting & Analytics', 
-                desc: 'Dashboards that update themselves.',
-                details: [
-                  'Automated data collection and aggregation',
-                  'Custom dashboards and reports',
-                  'Scheduled report delivery',
-                  'Alert thresholds and triggers',
-                  'Historical trend analysis'
-                ]
-              },
+              // Commented out - not core services people want
+              // { 
+              //   title: 'Reporting & Analytics', 
+              //   desc: 'Dashboards that update themselves.',
+              //   details: [
+              //     'Automated data collection and aggregation',
+              //     'Custom dashboards and reports',
+              //     'Scheduled report delivery',
+              //     'Alert thresholds and triggers',
+              //     'Historical trend analysis'
+              //   ]
+              // },
               { 
                 title: 'Operations & Admin', 
                 desc: 'Backend processes that run seamlessly.',
@@ -130,6 +132,17 @@ export default function AutomationPage() {
                   'Contract and document automation',
                   'Team scheduling and calendar management',
                   'Compliance and audit tasks'
+                ]
+              },
+              { 
+                title: 'Appointment Booking Automation', 
+                desc: 'Automated scheduling that eliminates back-and-forth and reduces no-shows.',
+                details: [
+                  'Automatic calendar sync and availability management',
+                  'Smart scheduling based on service type and duration',
+                  'Automated reminders via email, SMS, and push notifications',
+                  'Rescheduling and cancellation handling',
+                  'Integration with payment processing and confirmation'
                 ]
               },
             ].map((item, idx) => (

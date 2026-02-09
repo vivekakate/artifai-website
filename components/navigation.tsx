@@ -8,17 +8,17 @@ import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react'
 const serviceLinks = [
   {
     href: '/ai-services',
-    label: 'AI Services',
-    sub: 'Custom AI agents & workflows, ChatGPT ranking, lead response & document intelligence.',
+    label: 'AI Services & Voice Agents',
+    sub: 'Custom AI agents & workflows, ChatGPT ranking, AI voice agents, lead response automation.',
   },
   {
     href: '/automation',
-    label: 'AI Automation',
-    sub: 'Lead management & qualification, data sync across tools, reporting & dashboards.',
+    label: 'AI Automation & Chatbot',
+    sub: 'Lead management & qualification, appointment booking automation, email & marketing, customer support.',
   },
   {
     href: '/web-app',
-    label: 'Web & Apps',
+    label: 'Website & Apps',
     sub: 'Landing pages & marketing sites, web apps & SaaS, dashboards & e-commerce.',
   },
   {
