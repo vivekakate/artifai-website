@@ -3,6 +3,7 @@
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { ContactForm } from '@/components/contact-form'
+import { PortfolioSection } from '@/components/portfolio-section'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2, Film, Sparkles, Zap } from 'lucide-react'
 
@@ -179,6 +180,11 @@ export default function AIVideoPage() {
           </div>
         </div>
       </section>
+
+      <PortfolioSection
+        includeIds={['lipstick-ad']}
+        subtitle="A glimpse of how we use AI to produce scroll-stopping product ads."
+      />
 
       {/* How We Work */}
       <section className="py-32 px-6 lg:px-8">

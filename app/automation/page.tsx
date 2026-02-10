@@ -3,6 +3,7 @@
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { ContactForm } from '@/components/contact-form'
+import { PortfolioSection } from '@/components/portfolio-section'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
@@ -162,6 +163,11 @@ export default function AutomationPage() {
           </div>
         </div>
       </section>
+
+      <PortfolioSection
+        excludeIds={['advizy-website', 'artifai-website', 'lipstick-ad', 'trendify-bazaar']}
+        subtitle="Chatbots, automations, and behind-the-scenes systems we run for clients."
+      />
 
       {/* Tools We Connect */}
       <section className="py-32 px-6 lg:px-8 bg-black/2">

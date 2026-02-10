@@ -3,6 +3,7 @@
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { ContactForm } from '@/components/contact-form'
+import { PortfolioSection } from '@/components/portfolio-section'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
@@ -291,6 +292,11 @@ export default function AIServices() {
           </div>
         </div>
       </section>
+
+      <PortfolioSection
+        excludeIds={['advizy-website', 'trendify-bazaar']}
+        subtitle="AI agents, chatbots, and automation work we’ve shipped across brands."
+      />
 
       {/* Implementation Process */}
       <section className="py-32 px-6 lg:px-8 bg-foreground text-white">

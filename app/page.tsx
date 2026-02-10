@@ -3,28 +3,25 @@
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { ContactForm } from '@/components/contact-form'
+import { PortfolioSection } from '@/components/portfolio-section'
 import Link from 'next/link'
 import { ArrowRight, Star, CheckCircle2 } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
 const testimonials = [
   {
-    quote: "They took our chaotic workflow and turned it into a beautiful, intelligent system. We're saving 20 hours a week.",
-    author: "Sarah Chen",
-    role: "Operations Director, TechFlow",
-    stars: 5
+    quote:
+      "Advizy is all about connecting people with the right expert for a 1-on-1 call. They helped us design and ship the whole experience—from how experts list themselves to how users discover, book, and pay for time in just a few clicks.",
+    author: 'Sidhu',
+    role: 'CTO, Advizy',
+    stars: 5,
   },
   {
-    quote: "Most agencies talk about AI like it's magic. These folks explained exactly what it could do for us. Results exceeded expectations.",
-    author: "Marcus Williams",
-    role: "CTO, DataVision",
-    stars: 5
-  },
-  {
-    quote: "The web app they built is intuitive, fast, and our users actually enjoy using it. Rare to find that level of care.",
-    author: "Elena Rodriguez",
-    role: "Product Manager, CloudScale",
-    stars: 5
+    quote:
+      "They stepped in when our Shopify store was just a theme and a few products. Now Trendify Bazaar actually feels like a brand—with our catalog, operations, and day‑to‑day management all handled properly.",
+    author: 'Anshul',
+    role: 'CEO, Trendify Bazaar',
+    stars: 5,
   },
 ]
 
@@ -334,27 +331,32 @@ export default function Home() {
           </div>
         </div>
       </section>
+      
+      <PortfolioSection />
 
-      {/* Real results. Real people. (Testimonials) - commented out
+      {/* Real results. Real people. (Testimonials) */}
       <section className="py-32 px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <h2 className="font-serif text-5xl md:text-6xl leading-tight text-foreground mb-4">
             Real results. Real people.
           </h2>
           <p className="text-lg md:text-xl text-gray-600 mb-16 max-w-3xl leading-relaxed">
-            Don't take our word for it. Here's what our clients have to say.
+            Don&apos;t take our word for it. Here&apos;s what our clients have to say.
           </p>
           <div className="overflow-hidden">
             <div className="flex gap-6 animate-scroll-slow">
               {[...testimonials, ...testimonials].map((testimonial, idx) => (
-                <div key={idx} className="flex-shrink-0 w-96 bg-white rounded-lg p-8 border border-black/8 hover:border-black/20 transition-all">
+                <div
+                  key={idx}
+                  className="flex-shrink-0 w-96 bg-white rounded-lg p-8 border border-black/8 hover:border-black/20 transition-all"
+                >
                   <div className="flex gap-1 mb-4">
                     {[...Array(testimonial.stars)].map((_, i) => (
                       <Star key={i} size={18} className="fill-black text-black" />
                     ))}
                   </div>
                   <p className="text-base text-gray-700 leading-relaxed mb-6 italic">
-                    "{testimonial.quote}"
+                    &quot;{testimonial.quote}&quot;
                   </p>
                   <div>
                     <p className="font-semibold text-foreground text-sm">{testimonial.author}</p>
@@ -366,7 +368,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      */}
 
       {/* Process Section */}
       <section className="py-32 px-6 lg:px-8">

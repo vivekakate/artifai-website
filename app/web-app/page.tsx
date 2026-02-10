@@ -3,6 +3,7 @@
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { ContactForm } from '@/components/contact-form'
+import { PortfolioSection } from '@/components/portfolio-section'
 import Link from 'next/link'
 import { ArrowRight, CheckCircle2 } from 'lucide-react'
 
@@ -55,6 +56,14 @@ export default function WebAppPage() {
       howWeHelp: 'We translate requirements into intuitive software. Your team doesn\'t need training—they use it immediately.',
       howWeDiffer: 'We design for the humans using it, not just the spec. Your team will actually look forward to using it.',
       impact: '+5 hours/week per user'
+    },
+    {
+      title: 'SEO Optimization & Strategy',
+      desc: 'Full-funnel SEO for your existing site or product. Technical fixes, content strategy, and on-page optimization that actually move rankings.',
+      whatItDoes: 'We audit your site, fix technical issues, and build an SEO roadmap that compounds over time.',
+      howWeHelp: 'We combine technical SEO, on-page optimization, and content architecture so Google understands—and rewards—your business.',
+      howWeDiffer: 'No vague reports. Clear actions, implementation support, and measurable ranking and traffic gains.',
+      impact: '+120% organic leads in 6–12 months'
     },
   ]
 
@@ -324,6 +333,11 @@ export default function WebAppPage() {
           </Link>
         </div>
       </section>
+
+      <PortfolioSection
+        includeIds={['advizy-website', 'artifai-website', 'trendify-bazaar']}
+        subtitle="Web platforms, marketplaces, and storefronts we’ve designed, built, and helped run."
+      />
 
       <ContactForm />
 

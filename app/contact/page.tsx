@@ -1,7 +1,6 @@
 'use client'
 
 import React from "react"
-import Script from 'next/script'
 import { Navigation } from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { FormEvent, useState } from 'react'
@@ -163,20 +162,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Calendly inline widget */}
-      <section className="py-16 px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-2">Book a call.</h2>
-          <p className="text-lg text-gray-600 mb-8">Pick a time that works for you - 30 min, no pressure.</p>
-          <div
-            className="calendly-inline-widget"
-            data-url="https://calendly.com/artifai/30min"
-            style={{ minWidth: '320px', height: '700px' }}
-          />
-          <Script
-            src="https://assets.calendly.com/assets/external/widget.js"
-            strategy="lazyOnload"
-          />
+      {/* Book a Call Section */}
+      <section className="py-24 px-6 lg:px-8 bg-black text-white">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="font-serif text-4xl md:text-5xl leading-tight">
+            Prefer to jump on a call?
+          </h2>
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Skip the back-and-forth. Book a time that works for you and we&apos;ll walk through your project, questions, or ideas live.
+          </p>
+          <Link
+            href="https://calendly.com/artifai/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center px-10 py-4 bg-white text-black font-medium text-base hover:bg-white/90 transition-all"
+          >
+            Book a call
+          </Link>
         </div>
       </section>
 
@@ -185,7 +187,7 @@ export default function ContactPage() {
           <h2 className="font-serif text-5xl md:text-6xl mb-12">Other ways to reach us.</h2>
 
           <div className="space-y-8">
-            <div className="pb-8 border-b border-white/10">
+            <div className="pb-8 border-b border-white/10">git
               <h3 className="font-medium mb-2">Email</h3>
               <a href="mailto:artifaiofficial@gmail.com" className="text-gray-400 hover:text-white transition-fast">
                 artifaiofficial@gmail.com
