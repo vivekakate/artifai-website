@@ -18,9 +18,9 @@ export function Footer() {
           <div className="space-y-4">
             <h4 className="text-xs font-bold text-black uppercase tracking-widest">Services</h4>
             <ul className="space-y-3 text-sm text-gray-600">
-              <li><Link href="/ai-services" className="hover:text-black transition-fast underline-accent">AI Services</Link></li>
-              <li><Link href="/web-app" className="hover:text-black transition-fast underline-accent">Web & App</Link></li>
-              <li><Link href="/automation" className="hover:text-black transition-fast underline-accent">Automation</Link></li>
+              <li><Link href="/ai-services" className="hover:text-black transition-fast underline-accent">AI Services & Voice Agents</Link></li>
+              <li><Link href="/web-app" className="hover:text-black transition-fast underline-accent">Website & Apps</Link></li>
+              <li><Link href="/automation" className="hover:text-black transition-fast underline-accent">AI Automation & Chatbot</Link></li>
               <li><Link href="/ai-video" className="hover:text-black transition-fast underline-accent">AI Video & Creatives</Link></li>
             </ul>
           </div>
@@ -46,7 +46,7 @@ export function Footer() {
               <a href="https://www.linkedin.com/company/artifai" className="text-gray-600 hover:text-black transition-fast" title="LinkedIn" target="_blank" rel="noopener noreferrer">
                 <Linkedin size={18} />
               </a>
-              <a href="https://www.instagram.com/artifai.in?igsh=MWZlNnR5cnpjbmZpZQ==" className="text-gray-600 hover:text-black transition-fast" title="Instagram" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/artifai.in?utm_source=qr&igsh=MWZlNnR5cnpjbmZpZQ==" className="text-gray-600 hover:text-black transition-fast" title="Instagram" target="_blank" rel="noopener noreferrer">
                 <Instagram size={18} />
               </a>
             </div>

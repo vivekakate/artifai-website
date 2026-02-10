@@ -262,7 +262,7 @@ export default function Home() {
                   <div className="space-y-4 pt-4">
                     <h4 className="font-serif text-2xl text-foreground">What We Build</h4>
                     <ul className="space-y-3">
-                      {['Next.js applications & React components', 'SEO-optimized websites & landing pages', 'Real-time data dashboards & analytics tools', 'Mobile-responsive progressive web apps', 'E-commerce platforms & custom CMS'].map((item, idx) => (
+                      {['Next.js applications & React components', 'SEO optimization, websites & landing pages', 'Real-time data dashboards & analytics tools', 'Mobile-responsive progressive web apps', 'E-commerce platforms & custom CMS'].map((item, idx) => (
                         <li key={idx} className="flex gap-3 items-start">
                           <CheckCircle2 size={20} className="text-accent flex-shrink-0 mt-1" />
                           <span className="text-gray-700">{item}</span>

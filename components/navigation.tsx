@@ -19,7 +19,7 @@ const serviceLinks = [
   {
     href: '/web-app',
     label: 'Website & Apps',
-    sub: 'Landing pages & marketing sites, web apps & SaaS, dashboards & e-commerce.',
+    sub: 'Landing pages & marketing sites, web apps & SaaS, dashboards & e-commerce & SEO Optimization',
   },
   {
     href: '/ai-video',
