@@ -10,6 +10,14 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react'
 export default function WebAppPage() {
   const services = [
     {
+      title: 'UI/UX & Brand Design',
+      desc: 'Modern UI/UX for web apps, websites, and brands — from clean interfaces to complete website and logo design.',
+      whatItDoes: 'End-to-end interface, website, and brand design that makes your product feel premium and easy to use.',
+      howWeHelp: 'We design wireframes, high-fidelity UI, and brand assets (including logo and visual system) that match your product and audience.',
+      howWeDiffer: "Design that isn't just pretty — it's conversion-focused, accessible, and built to work perfectly with our development stack.",
+      impact: 'Higher trust, time-on-site, and conversions'
+    },
+    {
       title: 'Landing Pages & Marketing Sites',
       desc: 'High-converting pages optimized for Google that capture leads and tell your story compellingly. Rank + convert + build your brand.',
       whatItDoes: 'SEO-optimized websites designed to rank on Google, capture leads, and tell your story compellingly.',

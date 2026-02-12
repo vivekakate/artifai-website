@@ -187,7 +187,7 @@ export default function ContactPage() {
           <h2 className="font-serif text-5xl md:text-6xl mb-12">Other ways to reach us.</h2>
 
           <div className="space-y-8">
-            <div className="pb-8 border-b border-white/10">git
+            <div className="pb-8 border-b border-white/10">
               <h3 className="font-medium mb-2">Email</h3>
               <a href="mailto:artifaiofficial@gmail.com" className="text-gray-400 hover:text-white transition-fast">
                 artifaiofficial@gmail.com
